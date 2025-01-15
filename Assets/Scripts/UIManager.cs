@@ -22,22 +22,6 @@ public class UIManager : MonoBehaviour
             int hour, minute;
             timeManager.GetHourAndMinute(out hour, out minute);
             timeText.text = hour.ToString("00") + ":" + minute.ToString("00");
-            // if (hour < 12)
-            // {
-            //     timeText.text = hour.ToString() + " AM";
-            // }
-            // else
-            // {
-            //     if ((hour - 12) == 0)
-            //     {
-            //         timeText.text = "12 PM";
-            //     }
-            //     else
-            //     {
-            //         timeText.text = (hour - 12).ToString() + " PM";
-            //     }
-            // }
-
             dayText.text = dayNames[timeManager.CurrentDay] + ", June " + (timeManager.CurrentDay + 1);
         }
     }
